@@ -1,0 +1,73 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Youtube Search possitive scenarios",
+        "description": "",
+        "id": "yotube-search-validations;youtube-search-possitive-scenarios",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10530686342,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open chrome browser and enter url",
+            "match": {
+              "location": "YouTubeSearchStepDef.open_chrome_browser_and_enter_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1206093111,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Enter search creteria",
+            "match": {
+              "location": "YouTubeSearchStepDef.enter_search_creteria()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3899709213,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on search button",
+            "match": {
+              "location": "YouTubeSearchStepDef.click_on_search_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Youtube"
+          }
+        ]
+      }
+    ],
+    "name": "Yotube Search validations",
+    "description": "",
+    "id": "yotube-search-validations",
+    "keyword": "Feature",
+    "uri": "features/YouTubeSearch.feature",
+    "tags": [
+      {
+        "name": "@Youtube",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
