@@ -46,12 +46,14 @@ public class TRLoginStepDefs {
 	public void click_on_Login_button() {
 		TRLoginPage TRLogin_page = new TRLoginPage(driver);
 		TRLogin_page.login_btn_click();
+		Thread.sleep(3000);
 	}
 
 	@Then("TR Dashboard page is displayed")
 	public void tr_Dashboard_page_is_displayed() {
 		TRDashboard TRDashboard_page = new TRDashboard(driver);
 		TRDashboard_page.hasLoaded();
+		Thread.sleep(3000);
 		driver.close();
 	}
 
