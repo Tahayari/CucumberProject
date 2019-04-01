@@ -3,7 +3,6 @@ package stepDefinitions;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -31,7 +30,7 @@ public class TRLoginStepDefs {
 	}
 
 	@Given("Enter valid username\\/password")
-	public void enter_valid_username_password() throws IOException {
+	public void enter_valid_username_password() throws  IOException {
 		TRLoginPage TRLogin_page = new TRLoginPage(driver);
 		Properties properties=obj.getProperty(); 
 		
@@ -43,14 +42,14 @@ public class TRLoginStepDefs {
 	}
 
 	@When("Click on Login button")
-	public void click_on_Login_button() {
+	public void click_on_Login_button() throws InterruptedException {
 		TRLoginPage TRLogin_page = new TRLoginPage(driver);
 		TRLogin_page.login_btn_click();
 		Thread.sleep(3000);
 	}
 
 	@Then("TR Dashboard page is displayed")
-	public void tr_Dashboard_page_is_displayed() {
+	public void tr_Dashboard_page_is_displayed() throws InterruptedException {
 		TRDashboard TRDashboard_page = new TRDashboard(driver);
 		TRDashboard_page.hasLoaded();
 		Thread.sleep(3000);
