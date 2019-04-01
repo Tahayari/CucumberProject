@@ -4,64 +4,139 @@
     "elements": [
       {
         "line": 3,
-        "name": "Youtube Search possitive scenarios",
+        "name": "Login with a valid username and pass in TR page",
         "description": "",
-        "id": "yotube-search-validations;youtube-search-possitive-scenarios",
+        "id": "tr-login;login-with-a-valid-username-and-pass-in-tr-page",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 10530686342,
+              "duration": 30054392993,
               "status": "passed"
             },
             "line": 4,
-            "name": "Open chrome browser and enter url",
+            "name": "Open browser and access TR page",
             "match": {
-              "location": "YouTubeSearchStepDef.open_chrome_browser_and_enter_url()"
+              "location": "TRLoginStepDefs.open_chrome_browser_and_enter_url()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1206093111,
+              "duration": 1663409057,
               "status": "passed"
             },
             "line": 5,
-            "name": "Enter search creteria",
+            "name": "Enter valid username/password",
             "match": {
-              "location": "YouTubeSearchStepDef.enter_search_creteria()"
+              "location": "TRLoginStepDefs.enter_valid_username_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 264023025,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on Login button",
+            "match": {
+              "location": "TRLoginStepDefs.click_on_Login_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3899709213,
+              "duration": 803870461,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Click on search button",
+            "line": 7,
+            "name": "TR Dashboard page is displayed",
             "match": {
-              "location": "YouTubeSearchStepDef.click_on_search_button()"
+              "location": "TRLoginStepDefs.tr_Dashboard_page_is_displayed()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Youtube"
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Duplicate Login",
+        "description": "",
+        "id": "tr-login;duplicate-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27394841221,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Open browser and access TR page",
+            "match": {
+              "location": "TRLoginStepDefs.open_chrome_browser_and_enter_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1262619885,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Enter valid username/password",
+            "match": {
+              "location": "TRLoginStepDefs.enter_valid_username_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 384634163,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click on Login button",
+            "match": {
+              "location": "TRLoginStepDefs.click_on_Login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1064204169,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "TR Dashboard page is displayed",
+            "match": {
+              "location": "TRLoginStepDefs.tr_Dashboard_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
           }
         ]
       }
     ],
-    "name": "Yotube Search validations",
+    "name": "TR Login",
     "description": "",
-    "id": "yotube-search-validations",
+    "id": "tr-login",
     "keyword": "Feature",
-    "uri": "features/YouTubeSearch.feature",
+    "uri": "features/TR_Login.feature",
     "tags": [
       {
-        "name": "@Youtube",
+        "name": "@Login",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -1,37 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16412" started-at="2019-03-31T17:34:23Z" finished-at="2019-03-31T17:34:40Z">
+  <suite name="Suite" duration-ms="63868" started-at="2019-04-01T11:44:22Z" finished-at="2019-04-01T11:45:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16412" started-at="2019-03-31T17:34:23Z" finished-at="2019-03-31T17:34:40Z">
+    <test name="Test" duration-ms="63868" started-at="2019-04-01T11:44:22Z" finished-at="2019-04-01T11:45:25Z">
       <class name="testRunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.TestRunner@49993335]" name="setUpClass" is-config="true" duration-ms="269" started-at="2019-03-31T17:34:23Z" finished-at="2019-03-31T17:34:23Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.TestRunner@49993335]" name="setUpClass" is-config="true" duration-ms="351" started-at="2019-04-01T11:44:22Z" finished-at="2019-04-01T11:44:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@49993335]" name="feature" duration-ms="15983" started-at="2019-03-31T17:34:24Z" data-provider="features" finished-at="2019-03-31T17:34:40Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@49993335]" name="feature" duration-ms="33147" started-at="2019-04-01T11:44:22Z" data-provider="features" finished-at="2019-04-01T11:44:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Youtube Search possitive scenarios"]]>
+                <![CDATA["Login with a valid username and pass in TR page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Yotube Search validations"]]>
+                <![CDATA["TR Login"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@49993335]" name="tearDownClass" is-config="true" duration-ms="48" started-at="2019-03-31T17:34:40Z" finished-at="2019-03-31T17:34:40Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@49993335]" name="feature" duration-ms="30121" started-at="2019-04-01T11:44:55Z" data-provider="features" finished-at="2019-04-01T11:45:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Duplicate Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TR Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@49993335]" name="tearDownClass" is-config="true" duration-ms="118" started-at="2019-04-01T11:45:25Z" finished-at="2019-04-01T11:45:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testRunner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
