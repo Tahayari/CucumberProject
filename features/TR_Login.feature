@@ -5,9 +5,3 @@ Feature: TR Login
 	And Enter valid username/password
 	When Click on Login button
 	Then TR Dashboard page is displayed
-	
-	Scenario: Duplicate Login
-	Given Open browser and access TR page
-	And Enter valid username/password
-	When Click on Login button
-	Then TR Dashboard page is displayed

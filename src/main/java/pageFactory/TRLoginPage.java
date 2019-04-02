@@ -10,9 +10,9 @@ public class TRLoginPage {
 
 	WebDriver driver;
 	
-	@FindBy(xpath="//input[@id='login_form_username']") WebElement username_field;
-	@FindBy(xpath="//input[@name='password']") WebElement password_field;
-	@FindBy(xpath="//button[@type='submit']") WebElement login_btn;
+	@FindBy(xpath="//input[@id='login_form_username']") public WebElement username_field;
+	@FindBy(xpath="//input[@name='password']") public WebElement password_field;
+	@FindBy(xpath="//button[@type='submit']") public WebElement login_btn;
 	
 	
 	public TRLoginPage (WebDriver driver){

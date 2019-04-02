@@ -10,8 +10,9 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class TRDashboard {
 
+	
 	WebDriver driver;
-	@FindBy(xpath="//a[@href='/tr/new-lead']//button[@type='button']") WebElement addNewTR_btn;
+	@FindBy(xpath="//a[@href='/tr/new-lead']//button[@type='button']") public WebElement addNewTR_btn;
 	
 	
 	public TRDashboard(WebDriver driver){

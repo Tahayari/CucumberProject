@@ -13,7 +13,8 @@ import cucumber.api.testng.*;
 @CucumberOptions (
         features = "features"
         ,glue = {"stepDefinitions"}
-		,plugin= { "pretty",
+		,tags = {"@Login"}
+		,plugin = { "pretty",
                 "html:target/site/cucumber-pretty",
         "json:target/cucumber.json" },
         monochrome = true)

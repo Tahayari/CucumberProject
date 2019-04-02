@@ -4,29 +4,27 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import pageFactory.TRDashboard;
 import pageFactory.TRLoginPage;
+import utility.BrowserUtility;
+import utility.PropertiesFileReader;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import utility.PropertiesFileReader;
 
 public class TRLoginStepDefs {
-	public static WebDriver driver;
+	private WebDriver driver;
 	PropertiesFileReader obj= new PropertiesFileReader();  
 
 	@Given("^Open browser and access TR page$")
 	public void open_chrome_browser_and_enter_url() throws Throwable 
 	{
-		Properties properties=obj.getProperty();   
-
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver/chromedriver.exe");
-		driver=new ChromeDriver();
-		driver.manage().window().maximize();			
-		driver.get(properties.getProperty("browser.baseURL")+"/tr/login");
-		Thread.sleep(3000);	 	   
+		Properties properties=obj.getProperty();
+		System.out.println(properties.getProperty("browser.name"));
+		System.out.println(properties.getProperty("browser.baseURL")+"/tr/login");
+		this.driver=BrowserUtility.OpenBrowser(driver, properties.getProperty("browser.name"), properties.getProperty("browser.baseURL")+"/tr/login");
+		 	   
 	}
 
 	@Given("Enter valid username\\/password")
