@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
-import org.testng.Assert;
 
 public class TRDashboard {
 
@@ -21,8 +20,8 @@ public class TRDashboard {
 		PageFactory.initElements(factory, this);
 	}
 	
-	public void hasLoaded(){
-		Assert.assertEquals(addNewTR_btn.getText(), "Adaugă Recomandare nouă");
+	public String hasLoaded(){
+		return addNewTR_btn.getText();
 	}
 	
 	

@@ -6,6 +6,7 @@ import java.util.Properties;
 import listeners.ExtentReportsListener;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import pageObjects.TRDashboard;
 import pageObjects.TRLoginPage;
@@ -108,8 +109,9 @@ public class TRLoginStepDefs extends ExtentReportsListener  {
 			logInfo = test.createNode(new GherkinKeyword("Then"),"tr_Dashboard_page_is_displayed");
 			/*----------------------*/
 			TRDashboard TRDashboard_page = new TRDashboard(driver);
-			TRDashboard_page.hasLoaded();
-			Thread.sleep(3000);
+//			TRDashboard_page.hasLoaded();
+			Assert.assertEquals(TRDashboard_page.hasLoaded (), "Adaugă Recomandare nouă TEST");  
+			
 			logInfo.pass("Dashboard has loaded");
 			driver.quit();
 
@@ -117,7 +119,6 @@ public class TRLoginStepDefs extends ExtentReportsListener  {
 			testStepHandle("FAIL",driver,logInfo,e);
 
 		}
-
 
 
 	}

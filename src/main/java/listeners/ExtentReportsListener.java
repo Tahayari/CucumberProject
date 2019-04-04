@@ -42,10 +42,10 @@ public class ExtentReportsListener {
 		return extent;		
 	}
 
-	public static void testStepHandle(String teststatus,WebDriver driver,ExtentTest extenttest,Throwable throwable){
+	public static void testStepHandle(String teststatus,WebDriver driver,ExtentTest extenttest,Throwable throwable) {
 		switch (teststatus) {
-		case "FAILED":
-			extenttest.fail(MarkupHelper.createLabel("Test case is FAILED : ", ExtentColor.RED));
+		case "FAIL":		
+			extenttest.fail(MarkupHelper.createLabel("Test Case is Failed : ", ExtentColor.RED));			
 			extenttest.error(throwable.fillInStackTrace());
 			
 			try {
@@ -56,14 +56,14 @@ public class ExtentReportsListener {
 			
 			if (driver != null) {
 				driver.quit();
-			}
+			}		
+		break;
+		
+		case "PASS":			
+			extenttest.pass(MarkupHelper.createLabel("Test Case is Passed : ", ExtentColor.GREEN));
 			break;
-
-		case "PASSED":
-			extenttest.pass(MarkupHelper.createLabel("Test case has PASSED : ", ExtentColor.GREEN));
-			break;
-
-		default: 
+			
+		default:
 			break;
 		}
 	}
@@ -80,16 +80,14 @@ public class ExtentReportsListener {
 	}
 
 	private static String getcurrentdateandtime() {
-		String str = null; 
-		try{
+		String str = null;
+		try {
 			DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss:SSS");
 			Date date = new Date();
 			str = dateFormat.format(date);
-			str = str.replace(" ", "").replaceAll("/", "").replaceAll(":", "");	
-		} catch(Exception e){
-			
+			str = str.replace(" ", "").replaceAll("/", "").replaceAll(":", "");
+		} catch (Exception e) {
 		}
-		
 		return str;
 	}
 	
