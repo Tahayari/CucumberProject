@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="40039" started-at="2019-04-04T14:05:56Z" finished-at="2019-04-04T14:06:36Z">
+  <suite name="Suite" duration-ms="38621" started-at="2019-04-04T14:15:34Z" finished-at="2019-04-04T14:16:12Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="40039" started-at="2019-04-04T14:05:56Z" finished-at="2019-04-04T14:06:36Z">
+    <test name="Test" duration-ms="38621" started-at="2019-04-04T14:15:34Z" finished-at="2019-04-04T14:16:12Z">
       <class name="testRunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.TestRunner@59ec2012]" name="setUpClass" is-config="true" duration-ms="381" started-at="2019-04-04T14:05:56Z" finished-at="2019-04-04T14:05:57Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.TestRunner@59ec2012]" name="setUpClass" is-config="true" duration-ms="254" started-at="2019-04-04T14:15:34Z" finished-at="2019-04-04T14:15:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@59ec2012]" name="feature" duration-ms="38926" started-at="2019-04-04T14:05:57Z" data-provider="features" finished-at="2019-04-04T14:06:36Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@59ec2012]" name="feature" duration-ms="37919" started-at="2019-04-04T14:15:34Z" data-provider="features" finished-at="2019-04-04T14:16:12Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@59ec2012]" name="tearDownClass" is-config="true" duration-ms="18" started-at="2019-04-04T14:06:36Z" finished-at="2019-04-04T14:06:36Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@59ec2012]" name="tearDownClass" is-config="true" duration-ms="19" started-at="2019-04-04T14:16:12Z" finished-at="2019-04-04T14:16:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
