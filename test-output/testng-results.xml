@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8852" started-at="2019-04-02T11:53:52Z" finished-at="2019-04-02T11:54:01Z">
+  <suite name="Suite" duration-ms="36387" started-at="2019-04-04T11:15:08Z" finished-at="2019-04-04T11:15:44Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="8852" started-at="2019-04-02T11:53:52Z" finished-at="2019-04-02T11:54:01Z">
+    <test name="Test" duration-ms="36387" started-at="2019-04-04T11:15:08Z" finished-at="2019-04-04T11:15:44Z">
       <class name="testRunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.TestRunner@49993335]" name="setUpClass" is-config="true" duration-ms="187" started-at="2019-04-02T11:53:52Z" finished-at="2019-04-02T11:53:52Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.TestRunner@59ec2012]" name="setUpClass" is-config="true" duration-ms="155" started-at="2019-04-04T11:15:08Z" finished-at="2019-04-04T11:15:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@49993335]" name="feature" duration-ms="8543" started-at="2019-04-02T11:53:52Z" data-provider="features" finished-at="2019-04-02T11:54:01Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@59ec2012]" name="feature" duration-ms="35926" started-at="2019-04-04T11:15:08Z" data-provider="features" finished-at="2019-04-04T11:15:44Z">
           <params>
             <param index="0">
               <value>
@@ -24,26 +24,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:40)
-at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:156)
-at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:48)
-at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:86)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy16.click(Unknown Source)
-at pageFactory.TRLoginPage.enterUsername(TRLoginPage.java:25)
-at stepDefinitions.TRLoginStepDefs.enter_valid_username_password(TRLoginStepDefs.java:34)
-at ✽.Enter valid username/password(features/TR_Login.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@49993335]" name="tearDownClass" is-config="true" duration-ms="38" started-at="2019-04-02T11:54:01Z" finished-at="2019-04-02T11:54:01Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@59ec2012]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2019-04-04T11:15:44Z" finished-at="2019-04-04T11:15:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
